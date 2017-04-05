@@ -35,7 +35,6 @@ RSpec.describe LinkedList, type: Class do
       llist.add_to_tail(n1)
       llist.add_to_tail(n2)
     end
-
     specify { expect { llist.print }.to output("Rob\nBen\n").to_stdout }
   end
 
