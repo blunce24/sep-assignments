@@ -22,6 +22,9 @@ for i in 0..5
   llist.add_to_tail(node)
 end
 
+array.delete_at(5000)
+# llist.print
+
 
 puts Benchmark.measure { Array.new(10000, 'x') }
 n = 10000
@@ -35,4 +38,4 @@ puts Benchmark.measure { array.fetch(5000) }
 #puts Benchmark.measure { llist[5000] }
 
 puts Benchmark.measure { array.delete_at(5000) }
-puts Benchmark.measure { llist.delete(node2) }
+#puts Benchmark.measure { llist.delete(node2) }
