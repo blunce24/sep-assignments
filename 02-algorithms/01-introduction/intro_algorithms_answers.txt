@@ -1,0 +1,48 @@
+// Calculating a tip
+
+DEF TIP (bill, satisfaction)
+
+    CASE satisfaction OF
+        poor: percentage = 10
+        ok: percentage = 15
+        good: percentage = 20
+        great: percentage = 25
+    ENDCASE
+
+    CALCULATE tip = bill * percentage / 100 + bill
+
+    RETURN tip
+
+END DEF
+
+// Phone call
+
+DEF PHONECALL (phoneNumber)
+
+    FOR EACH number IN phoneNumber
+        INPUT number IN phone
+    END FOR
+
+    IF no answer THEN
+        WAIT FOR "beep"
+        LEAVE message
+    ELSE
+        TALK TO person who answered phone
+    END ELSE
+
+END DEF
+
+// go skiing
+
+DEF SKIING (equipment, mountain, energy)
+
+    TRAVEL TO mountain
+    BUY lift ticket
+    PUT ON equipment
+
+    REPEAT
+        SKI DOWN mountain
+        RIDE UP lift
+    UNTIL energy = 0
+END DEF
+    
