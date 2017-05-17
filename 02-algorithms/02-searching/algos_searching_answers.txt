@@ -1,0 +1,7 @@
+1. It would take 7 iterations to find value G using linear search.
+
+2. It would take 3 iterations to find value G using binary search.
+
+3. fib(10) = fib(9) + fib(8) = 34 + 21 = 55
+   fib(11) = fib(10) + fib(9) = 55 + 34 = 89
+   fib(12) = fib(11) + fib(10) = 89 + 55 = 144
