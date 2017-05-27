@@ -1,0 +1,43 @@
+1.  Binary Search Tree:
+      The Matrix: 87
+      Star Wars: Return of the Jedi: 80
+      Star Wars: A New Hope: 93
+      Pacific Rim: 72
+      Inception: 86
+      The Martian: 92
+      Star Wars: The Empire Strikes Back: 94
+      Braveheart: 78
+      The Shawshank Redemption: 91
+      Mad Max 2: The Road Warrior: 98
+      District 9: 90
+
+    Min Binary Heap:
+      Pacific Rim: 72
+      Braveheart: 78
+      Star Wars: Return of the Jedi: 80
+      Inception: 86
+      The Matrix: 87
+      District 9: 90
+      The Shawshank Redemption: 91
+      The Martian: 92
+      Star Wars: A New Hope: 93
+      Star Wars: The Empire Strikes Back: 94
+      Mad Max 2: The Road Warrior: 98
+
+2. Comparing the Binary Search Tree to the Min Binary Heap (both with Node implementations)
+
+  - The Binary Search Tree took less time on average to insert a node than the Heap implementation.
+  Binary Search Tree: 0.000036 sec
+  Min Binary Heap: 0.000092 sec
+
+  - The Min Binary Heap took less time to find a node than the Binary Search Tree.
+  Binary Search Tree: 0.000365 sec
+  Min Binary Heap: 0.000256 sec
+
+  - The Binary Search Tree took less time to delete a node than the Min Binary Heap.
+  Binary Search Tree: 0.000215 sec
+  Min Binary Heap: 0.000356 sec
+
+  - I would use a binary search tree to organize data that I would need to search through quickly.
+
+  - I would use a min binary heap for a priority queue to schedule tasks according to their importance.
