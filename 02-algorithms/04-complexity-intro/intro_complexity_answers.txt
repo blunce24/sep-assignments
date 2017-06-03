@@ -1,0 +1,25 @@
+1. An algorithm that has O(1) is a race car and an algorithm that has O(2^n) is a scooter.
+
+2. The best case for binary search would be that the value you're looking is at the midpoint of the array.
+
+3. The worst case for binary search would be that you halve the array until you end up with an array of one, which is your value.
+
+4. The bounded case for binary search lies between the value being at the initial midpoint, and halving the array until you end up with one value. You would halve the array until the resulting array's midpoint is the target value.
+
+5. The link to the graph is in my comment.
+
+6. The asymptotic limit is 2^n.
+
+7. The algorithm would have O(2^n).
+
+8. The ruby script would be pretty basic:
+def n_number_linear_search(iteration)
+  puts iteration
+end
+
+9. The link to the graph is in my comment. It has a O(n).
+
+Binary Search:
+10. Big-Oh of log(n) (logarithmic)
+11. Big-Omega of 1 (Constant)
+12. Big-Theta of log(n) (logarithmic)
