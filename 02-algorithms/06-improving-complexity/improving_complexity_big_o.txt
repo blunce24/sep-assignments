@@ -1,0 +1,19 @@
+For all versions, there are two steps in each algorithm:
+A. Loading the arrays into a combined array ("Load")
+B. Sorting the combined array ("Sort")
+
+1. poorly_written_ruby.rb
+The load step has a O(n^2) and the sorting step has a O(n^2) (It uses insertion sort).
+The overall complexity is O(n^2)
+
+2. improving_complexity_version_one.rb
+The load step has a O(n) and the sorting step has a O(n^2) (It uses insertion sort).
+The overall complexity is O(n^2)
+
+3. improving_complexity_version_two.rb
+The load step has a O(n) and the soritng step has a O(nlogn) (It uses quicksort).
+The overall complexity is O(nlogn)
+
+4. improving_complexity_version_three.rb
+The load step has a O(n) and the sorting step has a O(nlogn) (It uses heap sort).
+The overall complexity is O(nlogn)
