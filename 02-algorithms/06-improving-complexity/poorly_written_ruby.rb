@@ -1,3 +1,5 @@
+require_relative "../03-sorting/quick_sort.rb"
+
 # This method takes n arrays as input and combine them in sorted ascending  order
 def poorly_written_ruby(*arrays)
   combined_array = []
