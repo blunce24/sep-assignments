@@ -1,0 +1,76 @@
+1. Remove duplicates in a query response
+- SQL
+SELECT DISTINCT * FROM post;
+- ORM
+posts = Post.all.distinct
+
+2. Filter records using
+a) Inequalities
+- SQL
+SELECT * FROM comment WHERE post_id > 5;
+- ORM
+comments = Comment.where('post_id > 5')
+
+b) Pattern matching
+- SQL
+SELECT * FROM user WHERE full_name LIKE 'B%';
+- ORM
+user = User.where("full_name LIKE 'B%'")
+
+c) Ranges
+- SQL
+SELECT * FROM comment WHERE user_id BETWEEN 5 AND 10;
+- ORM
+comment = Comment.where("user_id >= 5 AND user_id <= 10")
+
+d) Boolean logic
+- SQL
+SELECT * FROM post WHERE user_id BETWEEN 3 AND 9 AND title LIKE 'D%';
+- ORM
+comment = Comment.where("user_id >= 5 AND user_id <= 10 AND title LIKE 'D%'")
+
+3. Sort records in a particular order
+- SQL
+SELECT * FROM post ORDER BY user_id DESC;
+- ORM
+post = Post.order(user_id: :desc)
+
+4. Limit the number of records returned
+- SQL
+SELECT * FROM post LIMIT 3;
+- ORM
+post = Post.limit(3)
+
+5. Group records into sections
+- SQL
+SELECT * FROM comment GROUP BY user_id;
+- ORM
+comment = Comment.group("user_id")
+
+6. Perform calculations using aggregate functions
+- SQL
+SELECT COUNT(*) FROM post;
+- ORM
+count = Post.count
+
+7. Join tables using
+a) Cross join
+- SQL
+SELECT * FROM user
+CROSS JOIN comment;
+- ORM
+user_comments = User.joins("CROSS JOIN comment")
+
+b) Inner join
+- SQL
+SELECT * FROM user
+INNER JOIN comment ON user.id = comment.user_id;
+- ORM
+user_comments = User.joins(:comment)
+
+c) Outer join
+- SQL
+SELECT * FROM user
+LEFT JOIN comment ON user.id = comment.user_id;
+- ORM
+user_comments = User.joins("LEFT JOIN comment ON user.id = comment.user_id")
